@@ -5,15 +5,11 @@ import {
   Text,
   StyleSheet,
   StatusBar,
-  SafeAreaView,
-  Image,
-  ImageSourcePropType,
   Platform,
 } from "react-native";
 import Snackbar, { SnackBarOptions } from "react-native-snackbar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useSelector } from "react-redux";
 import { REDUX_TYPE, LOADING_TYPE } from "./redux/redux-type-saga";
 import { Record, Collection } from "immutable";
