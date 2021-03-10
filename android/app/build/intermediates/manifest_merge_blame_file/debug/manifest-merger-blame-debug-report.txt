@@ -15,8 +15,8 @@
 12-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/623174cd4892d9fb924ac44b102b25c0/flipper-0.37.0/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/623174cd4892d9fb924ac44b102b25c0/flipper-0.37.0/AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:22-73
 14
 15    <application
 15-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:6:5-25:19
@@ -25,7 +25,7 @@
 17        android:allowBackup="false"
 17-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:11:7-34
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+18-->[androidx.core:core:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6466522822c9f31c5107b8fc2277998a/core-1.1.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
 20-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:9:7-41
@@ -83,6 +83,81 @@
 47                android:resource="@xml/provider_paths" />
 47-->[:react-native-image-picker] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
 48        </provider>
-49    </application>
-50
-51</manifest>
+49
+50        <activity
+50-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:23:9-27:75
+51            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+51-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:24:13-93
+52            android:excludeFromRecents="true"
+52-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:25:13-46
+53            android:exported="false"
+53-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:26:13-37
+54            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+54-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:27:13-72
+55        <!--
+56            Service handling Google Sign-In user revocation. For apps that do not integrate with
+57            Google Sign-In, this service will never be started.
+58        -->
+59        <service
+59-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:33:9-37:51
+60            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+60-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
+61            android:exported="true"
+61-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:35:13-36
+62            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+62-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:36:13-107
+63            android:visibleToInstantApps="true" />
+63-->[com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:37:13-48
+64
+65        <activity
+65-->[com.google.android.gms:play-services-base:17.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d3caf54114e86177d18237a7364d1766/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+66-->[com.google.android.gms:play-services-base:17.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d3caf54114e86177d18237a7364d1766/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-base:17.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d3caf54114e86177d18237a7364d1766/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-base:17.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d3caf54114e86177d18237a7364d1766/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+69
+70        <provider
+70-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+71            android:name="com.google.firebase.provider.FirebaseInitProvider"
+71-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+72            android:authorities="com.apppharmacist.firebaseinitprovider"
+72-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+73            android:directBootAware="true"
+73-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+74            android:exported="false"
+74-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+75            android:initOrder="100" />
+75-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+76
+77        <service
+77-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
+78            android:name="com.google.firebase.components.ComponentDiscoveryService"
+78-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:34:13-84
+79            android:directBootAware="true"
+79-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+80            android:exported="false" >
+80-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:36:13-37
+81
+82            <!--
+83                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+84                clients to use it as well, by defining this registrar in their own core/common library.
+85            -->
+86            <meta-data
+86-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+87                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+87-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-common:19.5.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/dcc789b7d84d3b23ea100395c6e23307/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+89        </service>
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.1.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a37f8fa7be598acd4311b99631376a30/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.1.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a37f8fa7be598acd4311b99631376a30/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.1.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a37f8fa7be598acd4311b99631376a30/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>

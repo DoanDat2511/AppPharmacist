@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000319114483",
+    "project_id": "apppharmacist-b6402",
+    "storage_bucket": "apppharmacist-b6402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000319114483:android:15d668a09f85d0c211ab86",
+        "android_client_info": {
+          "package_name": "com.apppharmacist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000319114483-q9pa8ft2g8crurnedsr4b5qqc2c0ge7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdlU42Y5hVDsU1-VWSDqNAd1cz988JEyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000319114483-q9pa8ft2g8crurnedsr4b5qqc2c0ge7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
