@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1000319114483-q9pa8ft2g8crurnedsr4b5qqc2c0ge7o.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1000319114483</string>
+    <string name="google_api_key" translatable="false">AIzaSyDdlU42Y5hVDsU1-VWSDqNAd1cz988JEyk</string>
+    <string name="google_app_id" translatable="false">1:1000319114483:android:15d668a09f85d0c211ab86</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDdlU42Y5hVDsU1-VWSDqNAd1cz988JEyk</string>
+    <string name="google_storage_bucket" translatable="false">apppharmacist-b6402.appspot.com</string>
+    <string name="project_id" translatable="false">apppharmacist-b6402</string>
+</resources>
