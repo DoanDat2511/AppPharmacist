@@ -1,0 +1,6 @@
+module Pods_AppPharmacist_AppPharmacistTests {
+  umbrella header "Pods-AppPharmacist-AppPharmacistTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
