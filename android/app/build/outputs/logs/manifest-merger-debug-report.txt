@@ -24,6 +24,7 @@ MERGED from [:react-native-snackbar] /Users/dattd/Desktop/React-native/AppPharma
 MERGED from [:react-native-spinkit] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-spinkit/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/42abc2078ad0da08833e046e1a96933f/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -298,6 +299,8 @@ MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppP
 MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:20:5-44

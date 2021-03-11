@@ -27,7 +27,7 @@ import { useSelector, useDispatch } from "react-redux";
 import * as Animatable from "react-native-animatable";
 import ActionSheet from "react-native-actionsheet";
 import auth from "@react-native-firebase/auth";
-// import IconSearch from "react-native-vector-icons/AntDesign";
+import IconSearch from "react-native-vector-icons/AntDesign";
 
 import styles from "./Styles"
 import TouchableComponent from "../../components/Button";
@@ -273,7 +273,7 @@ const Login: React.FC<IBaseProps> = (props) => {
           style={styles.imgBottom}
           resizeMode='stretch'
         />
-        {/* <IconSearch name='search1' color='red' size={22} /> */}
+        <IconSearch name='search1' color='red' size={22} />
       </KeyboardAvoidingView>
 
       <ActionSheet
