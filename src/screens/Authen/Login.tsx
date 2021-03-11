@@ -114,8 +114,8 @@ const Login: React.FC<IBaseProps> = (props) => {
     // console.log("===== authen",auth())
     auth()
       .createUserWithEmailAndPassword(
-        "jane.doe@example.com",
-        "SuperSecretPassword!"
+        "trandoandat322@gmail.com",
+        "fddfdfdf!"
       )
       .then(() => {
         console.log("User account created & signed in!");
