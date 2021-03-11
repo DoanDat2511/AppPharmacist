@@ -27,6 +27,8 @@ import { useSelector, useDispatch } from "react-redux";
 import * as Animatable from "react-native-animatable";
 import ActionSheet from "react-native-actionsheet";
 import LinearGradient from "react-native-linear-gradient";
+import auth from "@react-native-firebase/auth";
+
 import TouchableComponent from "../../components/Button";
 import {
   sGetLanguage,
@@ -108,6 +110,28 @@ const Login: React.FC<IBaseProps> = (props) => {
   const [isVisibleForget, setIsVisibleForget] = useState(false);
 
 
+  useEffect(()=>{
+    // console.log("===== authen",auth())
+    auth()
+      .createUserWithEmailAndPassword(
+        "trandoandat322@gmail.com",
+        "fddfdfdf!"
+      )
+      .then(() => {
+        console.log("User account created & signed in!");
+      })
+      .catch((error) => {
+        if (error.code === "auth/email-already-in-use") {
+          console.log("That email address is already in use!");
+        }
+
+        if (error.code === "auth/invalid-email") {
+          console.log("That email address is invalid!");
+        }
+
+        console.error(error);
+      });
+  },[])
   const _onChangeUsername = useCallback((text) => {
     setUsername(text);
   }, []);
