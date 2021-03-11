@@ -41,6 +41,8 @@ import com.azendoo.reactnativesnackbar.SnackbarPackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 // react-native-splash-screen
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
 
 public class PackageList {
   private Application application;
@@ -100,7 +102,8 @@ public class PackageList {
       new RNScreensPackage(),
       new SnackbarPackage(),
       new RNSpinkitPackage(),
-      new SplashScreenReactPackage()
+      new SplashScreenReactPackage(),
+      new SvgPackage()
     ));
   }
 }
