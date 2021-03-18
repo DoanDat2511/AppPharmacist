@@ -126,7 +126,7 @@ const Header: React.FC<IProps> = (props) => {
       <SafeAreaView
         style={{ backgroundColor: backgroundColor || Colors.DARK_BLUE }}
       >
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle="dark-content" />
         <View style={headerStyle} {...other}>
           {headerCenterComponent}
           {headerLeftComponent}

@@ -15,8 +15,8 @@
 12-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 14    <uses-permission android:name="android.permission.WAKE_LOCK" />
 14-->[:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 14-->[:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65

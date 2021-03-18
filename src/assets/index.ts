@@ -28,3 +28,9 @@ export const ic_books = require("./images/ic_books.png");
 
 // icon svg 
 
+// icon at screen overview
+
+export const back = require("./images/back.png");
+
+export const img_user = require("./users/profile_default.png")
+

@@ -5,13 +5,14 @@ INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/ma
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:1:1-27:12
 MERGED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:1:1-27:12
-MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/123d03517b8b1cd329cba800c27ee445/flipper-network-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/3b613cf6b7af6efdc8c87c2f7f571525/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e6e52a2243b54fefa67852e7b9e93c72/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b20250214cd8cf7067987e4d5a920703/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_async-storage] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_slider] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/slider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -24,7 +25,6 @@ MERGED from [:react-native-snackbar] /Users/dattd/Desktop/React-native/AppPharma
 MERGED from [:react-native-spinkit] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-spinkit/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/42abc2078ad0da08833e046e1a96933f/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -32,20 +32,15 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/dattd/.gradle/
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/58baa160ab535252d676d32c555673df/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/dattd/.gradle/caches/transforms-2/files-2.1/55e8e1f3452caf6d45970ff2be920e33/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-linear-gradient] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/7661e9e624619dad65806659b4e92ea3/flipper-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/10f7bfe789ba03509b31a27380eeef40/stetho-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/54fd9679a5718fbf2009ddfae0774175/fresco-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b147225f7999c2e97c74b7d52458ddd/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/bc248ce4c984d6fb0cc8aae7da8bd950/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/28519d10d56b69bb7e57a80d1431029b/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c551e8577f67400ca38916ede5acb5fe/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5e857249bc93d7ff31520804b3a1509f/drawee-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b6229222cbd11a6b47ffa53815aff93a/nativeimagefilters-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/65d7bc8f0c86f952567389796f9e4f89/memory-type-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a65761e9c2d43267606236e74c12cf4a/memory-type-java-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a32e79a319e3e4796f52017cbac9ed6e/imagepipeline-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/11b4b4977164ac3367506aa7937777f4/memory-type-ashmem-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/91f8378d14653cd736a23ea91c7363ac/imagepipeline-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e4249928cdfb41a6e082a755907bc886/nativeimagetranscoder-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ffd7d2ad5d0a8492064b8d430ba6992a/imagepipeline-base-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2583e3d81e87b403a50e987914e4491/soloader-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/81e03a57cb85443de03899932a746325/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2858bf952c24dbc4953c6ccab884d91c/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f9dcd23c65a66fce9bb55804cc35bb21/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d70248423f2dc8fdfaf41db855f5a15c/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c43f49d2172ce5e0d8b502fa95d44d16/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c7559202d3ccc4e07ee25529094c7982/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/daa3c2686a1605e889aa91397aeb3607/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-messaging:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d18b4adb572b4fc6b5ad7e2f221599b9/jetified-firebase-messaging-21.0.1/AndroidManifest.xml:17:1-45:12
@@ -103,8 +98,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/dattd/.gra
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/432f01a3c322df5c953f4baa29bd40f7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.ybq:Android-SpinKit:1.4.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c6f9abf25840c42315978663f0523e2a/Android-SpinKit-1.4.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/245921b26abc389f933651f84a312797/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/cf1bd1fd07c046530560dc9bc3c4f684/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/9adc472a0276fe390f3f8a0c0f125417/ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/fe59d61c209989776341692c84f14b06/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -127,8 +121,8 @@ INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/de
 		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
@@ -261,12 +255,12 @@ uses-sdk
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml
-MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/123d03517b8b1cd329cba800c27ee445/flipper-network-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/123d03517b8b1cd329cba800c27ee445/flipper-network-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/3b613cf6b7af6efdc8c87c2f7f571525/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/3b613cf6b7af6efdc8c87c2f7f571525/flipper-fresco-plugin-0.37.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e6e52a2243b54fefa67852e7b9e93c72/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e6e52a2243b54fefa67852e7b9e93c72/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b20250214cd8cf7067987e4d5a920703/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b20250214cd8cf7067987e4d5a920703/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -275,6 +269,8 @@ MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPh
 MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_async-storage] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_async-storage] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -299,8 +295,6 @@ MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppP
 MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:20:5-44
@@ -315,34 +309,24 @@ MERGED from [org.webkit:android-jsc:r245459] /Users/dattd/.gradle/caches/transfo
 MERGED from [org.webkit:android-jsc:r245459] /Users/dattd/.gradle/caches/transforms-2/files-2.1/55e8e1f3452caf6d45970ff2be920e33/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/7661e9e624619dad65806659b4e92ea3/flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/7661e9e624619dad65806659b4e92ea3/flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/10f7bfe789ba03509b31a27380eeef40/stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/10f7bfe789ba03509b31a27380eeef40/stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/54fd9679a5718fbf2009ddfae0774175/fresco-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/54fd9679a5718fbf2009ddfae0774175/fresco-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b147225f7999c2e97c74b7d52458ddd/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b147225f7999c2e97c74b7d52458ddd/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/bc248ce4c984d6fb0cc8aae7da8bd950/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/bc248ce4c984d6fb0cc8aae7da8bd950/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/28519d10d56b69bb7e57a80d1431029b/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/28519d10d56b69bb7e57a80d1431029b/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c551e8577f67400ca38916ede5acb5fe/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c551e8577f67400ca38916ede5acb5fe/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5e857249bc93d7ff31520804b3a1509f/drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5e857249bc93d7ff31520804b3a1509f/drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b6229222cbd11a6b47ffa53815aff93a/nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b6229222cbd11a6b47ffa53815aff93a/nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/65d7bc8f0c86f952567389796f9e4f89/memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/65d7bc8f0c86f952567389796f9e4f89/memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a65761e9c2d43267606236e74c12cf4a/memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a65761e9c2d43267606236e74c12cf4a/memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a32e79a319e3e4796f52017cbac9ed6e/imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a32e79a319e3e4796f52017cbac9ed6e/imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/11b4b4977164ac3367506aa7937777f4/memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/11b4b4977164ac3367506aa7937777f4/memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/91f8378d14653cd736a23ea91c7363ac/imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/91f8378d14653cd736a23ea91c7363ac/imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e4249928cdfb41a6e082a755907bc886/nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e4249928cdfb41a6e082a755907bc886/nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ffd7d2ad5d0a8492064b8d430ba6992a/imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ffd7d2ad5d0a8492064b8d430ba6992a/imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2583e3d81e87b403a50e987914e4491/soloader-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2583e3d81e87b403a50e987914e4491/soloader-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/81e03a57cb85443de03899932a746325/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/81e03a57cb85443de03899932a746325/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2858bf952c24dbc4953c6ccab884d91c/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2858bf952c24dbc4953c6ccab884d91c/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f9dcd23c65a66fce9bb55804cc35bb21/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f9dcd23c65a66fce9bb55804cc35bb21/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d70248423f2dc8fdfaf41db855f5a15c/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d70248423f2dc8fdfaf41db855f5a15c/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c43f49d2172ce5e0d8b502fa95d44d16/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c43f49d2172ce5e0d8b502fa95d44d16/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c7559202d3ccc4e07ee25529094c7982/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c7559202d3ccc4e07ee25529094c7982/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/daa3c2686a1605e889aa91397aeb3607/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -457,10 +441,8 @@ MERGED from [com.github.ybq:Android-SpinKit:1.4.0] /Users/dattd/.gradle/caches/t
 MERGED from [com.github.ybq:Android-SpinKit:1.4.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c6f9abf25840c42315978663f0523e2a/Android-SpinKit-1.4.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/245921b26abc389f933651f84a312797/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/245921b26abc389f933651f84a312797/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/cf1bd1fd07c046530560dc9bc3c4f684/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/cf1bd1fd07c046530560dc9bc3c4f684/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/9adc472a0276fe390f3f8a0c0f125417/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/9adc472a0276fe390f3f8a0c0f125417/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/fe59d61c209989776341692c84f14b06/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/fe59d61c209989776341692c84f14b06/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -474,9 +456,9 @@ ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug
 	android:name
 		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:5-76
+ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [com.facebook.flipper:flipper:0.37.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/f83c0d1c0de52875b561162f0ef0d310/flipper-0.37.0/AndroidManifest.xml:16:22-73
+		ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d74d3f48b7cfc043841b7a1d1f0518cb/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68

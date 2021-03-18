@@ -3366,10 +3366,6 @@ public final class R {
     public static final int roundedCornerRadius=0x7f03017d;
     /**
      * Rounding border color
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -13422,10 +13418,6 @@ public final class R {
      * @attr description
      * Rounding border color
      *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -17019,10 +17011,6 @@ public final class R {
      * @attr description
      * Rounding border color
      *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".

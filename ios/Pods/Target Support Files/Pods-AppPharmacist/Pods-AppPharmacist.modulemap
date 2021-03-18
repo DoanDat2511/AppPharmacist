@@ -1,6 +1,0 @@
-module Pods_AppPharmacist {
-  umbrella header "Pods-AppPharmacist-umbrella.h"
-
-  export *
-  module * { export * }
-}
