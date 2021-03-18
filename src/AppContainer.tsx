@@ -18,7 +18,8 @@ import { sGetIndicatorState } from "./redux/selectors";
 import { Screens } from "./NavigationConfig";
 import navigationService from "./navigation/navigation-service";
 
-import Login from "./screens/Authen/Login";
+import TabBottomMain from "./navigation/Tabbar_navigation";
+import { Login, CreateAccount } from "./screens/Authen";
 
 import Splash from "./screens/Splash";
 
@@ -76,7 +77,10 @@ const AppContainer: React.FC = (props) => {
   const NavigationView = useMemo(() => {
     return (
       <NavigationContainer ref={_updateNavigator}>
-        <Stack.Navigator initialRouteName={Screens.Splash} headerMode="none">
+        <Stack.Navigator
+          initialRouteName={Screens.CreateAccount}
+          headerMode='none'
+        >
           <Stack.Screen
             name={Screens.Splash}
             component={Splash}
@@ -86,6 +90,18 @@ const AppContainer: React.FC = (props) => {
           <Stack.Screen
             name={Screens.Login}
             component={Login}
+            key={Screens.Login}
+            options={{ gestureEnabled: false }}
+          />
+          <Stack.Screen
+            name={Screens.CreateAccount}
+            component={CreateAccount}
+            key={Screens.CreateAccount}
+            options={{ gestureEnabled: false }}
+          />
+          <Stack.Screen
+            name={Screens.Tabbar}
+            component={TabBottomMain}
             key={Screens.Login}
             options={{ gestureEnabled: false }}
           />

@@ -15,4 +15,7 @@ export default {
   forget_password: "Forget Password",
   login: "Login",
   sign_up: "Sign Up",
+  login_fb:"Login FaceBook",
+  login_google:"Login Google",
+  or: "OR",
 };

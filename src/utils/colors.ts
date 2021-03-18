@@ -37,5 +37,33 @@ export default {
   WHITE_PLACEHOLDER: "#596274",
   SUPER_WHITE_BORDER: "#334055",
   LAVENDER: "#202838",
+  LIGHT_RED: "#FFECEC",
   RED: "#FF0000",
+
+  primary: "#24C16B", // green
+  secondary: "#0C381F", // dark green
+
+  greens: "#66D59A",
+  lightGreen: "#E6FEF0",
+
+  lime: "#00BA63",
+  emerald: "#2BC978",
+
+  red: "#FF4134",
+  lightRed: "#FFF1F0",
+
+  purple: "#6B3CE9",
+  lightpurple: "#F3EFFF",
+
+  yellows: "#FFC664",
+  lightyellow: "#FFF9EC",
+
+  blacks: "#1E1F20",
+  whites: "#FFFFFF",
+
+  lightGray: "#FCFBFC",
+  gray1: "#C1C3C5",
+  darkgray: "#C3C6C7",
+
+  transparent: "transparent",
 };

@@ -14,7 +14,7 @@ const Splash: React.FC<IBaseProps> = (props) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>FileCoin Wallet</Text>
+      <Text style={styles.title}>AppPharmacist</Text>
     </View>
   );
 };

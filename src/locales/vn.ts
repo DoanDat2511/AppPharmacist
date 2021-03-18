@@ -15,4 +15,7 @@ export default {
   forget_password: "Quên mật khẩu",
   login: "Đăng nhập",
   sign_up: "Đăng ký",
+  login_fb: "Đăng nhập qua FaceBook",
+  login_google: "Đăng nhập qua Google",
+  or: "Hoặc",
 };
