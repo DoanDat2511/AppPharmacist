@@ -7,12 +7,14 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import IconChat from "react-native-vector-icons/Entypo";
 import IconNews from "react-native-vector-icons/Ionicons";
 import IconPharmacy from "react-native-vector-icons/MaterialIcons";
+import IconSetting from "react-native-vector-icons/Ionicons";
 
 import { Screens } from "../NavigationConfig";
 import HomeStack from "./Home_navigation";
 import ChatStack from "./Chat_navigation";
 import News from "../screens/News/NewsList";
 import PharmacyStack from "./Pharamacy_navigation";
+import SettingStack from "./Setting_navigation"
 import colors from "../utils/colors";
 
 const Tab = createBottomTabNavigator();
@@ -50,9 +52,9 @@ const TabBottomMain = () => {
       <Tab.Screen
         name={Screens.Chat}
         component={ChatStack}
-        options={({route}) => ({
+        options={({ route }) => ({
           tabBarLabel: Screens.Chat,
-          tabBarIcon: ({ color ,}) => (
+          tabBarIcon: ({ color }) => (
             <IconChat name='chat' color={color} size={26} />
           ),
           tabBarVisible: getTabBarVisibility(route),
@@ -70,11 +72,11 @@ const TabBottomMain = () => {
       />
       <Tab.Screen
         name={Screens.ManagePharmacy}
-        component={PharmacyStack}
+        component={SettingStack}
         options={{
-          tabBarLabel: "Pharmacy",
+          tabBarLabel: Screens.Setting,
           tabBarIcon: ({ color }) => (
-            <IconPharmacy name='date-range' color={color} size={26} />
+            <IconSetting name='settings-sharp' color={color} size={26} />
           ),
         }}
       />

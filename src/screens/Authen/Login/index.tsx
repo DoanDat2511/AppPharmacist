@@ -146,7 +146,10 @@ const Login: React.FC<IBaseProps> = (props) => {
   const _onPressLoginFaceBook = useCallback(() => {
     navigation.navigate(Screens.Tabbar);
   }, []);
-
+  
+  const _onPressSignUp =  useCallback(()=>{
+    navigation.navigate(Screens.CreateAccount)
+  },[])
   const languageDisplay = useMemo(() => {
     if (language === ELanguage.English) {
       return t("english");
@@ -262,7 +265,7 @@ const Login: React.FC<IBaseProps> = (props) => {
           <ButtonComponent
             title={t("sign_up")}
             style={styles.viewButtonSign}
-            onPress={(_) => {}}
+            onPress={_onPressSignUp}
           />
         </SafeAreaView>
         <Image

@@ -78,7 +78,7 @@ const AppContainer: React.FC = (props) => {
     return (
       <NavigationContainer ref={_updateNavigator}>
         <Stack.Navigator
-          initialRouteName={Screens.CreateAccount}
+          initialRouteName={Screens.Splash}
           headerMode='none'
         >
           <Stack.Screen
