@@ -22,14 +22,14 @@ const InputFied: React.FC<IInputFied> = (props) => {
   return (
     <View>
       <Text style={styles.title}>{title}</Text>
-      <View style={styles.viewInput}>
+      {/* <View style={styles.viewInput}> */}
         <TextInput
           style={styles.inputText}
           autoCompleteType="email"
           onChangeText={onChangeText}
           {...other}
         />
-      </View>
+      {/* </View> */}
     </View>
   );
 };
@@ -40,11 +40,12 @@ const styles = StyleSheet.create({
   },
   inputText: {
     paddingHorizontal: 10,
-    paddingVertical: 15,
+    paddingVertical: 8,
     backgroundColor: "#F5F8FB",
     borderRadius: 5,
-    borderWidth: 0.2,
-    borderColor: Colors.gray_3
+    borderWidth: 0.5,
+    borderColor: Colors.gray_3,
+    marginVertical: 10,
   },
   viewInput: {
     marginVertical: 10,

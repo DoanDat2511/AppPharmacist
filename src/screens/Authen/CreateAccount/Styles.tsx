@@ -44,9 +44,22 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
-  viewBody:{
-      marginHorizontal:20,
-      marginVertical:20,
+  viewBody: {
+    marginHorizontal: 20,
+    marginVertical: 20,
+  },
+  viewButton:{
+    marginHorizontal:20,
+    justifyContent:"center",
+    alignItems:"center",
+    paddingVertical:10,
+    backgroundColor:Colors.BLUE_OPACITY,
+    borderRadius:5,
+  },
+  titleButton:{
+    fontSize:16,
+    fontWeight:"bold",
+    color:Colors.white
   }
 });
 
