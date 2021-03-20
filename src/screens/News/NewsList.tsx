@@ -7,13 +7,13 @@ const NewsList: React.FC<IBaseProps> = (props) => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>NewsList </Text>
-      <Animatable.Text
+      {/* <Animatable.Text
         animation='bounce'
         iterationCount={5}
         direction='alternate'
       >
         Up and down you go
-      </Animatable.Text>
+      </Animatable.Text> */}
     </View>
   );
 };

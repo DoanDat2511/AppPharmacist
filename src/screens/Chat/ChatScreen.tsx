@@ -1,20 +1,19 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import {
   View,
   Text,
   Image,
   FlatList,
-  SafeAreaView,
-  StyleSheet,
 } from "react-native";
 import { useTranslation } from "react-i18next";
 
 import styles from "./Styles";
 import Colors from "../../utils/colors";
-import { ic_menu, ic_noti } from "../../assets";
-import TouchableComponent from "../../components/Button";
+import { ic_search } from "../../assets";
 import Header from "../../components/Header";
 import { IBaseProps } from "../../utils/interface";
+import SearchInput from "../../components/SearchInput"
+import TouchableComponent from "../../components/Button";
 const Messages = [
   {
     id: "1",
@@ -23,6 +22,7 @@ const Messages = [
     messageTime: "4 mins ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: true,
   },
   {
     id: "2",
@@ -31,6 +31,7 @@ const Messages = [
     messageTime: "2 hours ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: true,
   },
   {
     id: "3",
@@ -39,6 +40,7 @@ const Messages = [
     messageTime: "1 hours ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: false,
   },
   {
     id: "4",
@@ -47,6 +49,7 @@ const Messages = [
     messageTime: "1 day ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: false,
   },
   {
     id: "5",
@@ -55,6 +58,7 @@ const Messages = [
     messageTime: "2 days ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: false,
   },
   {
     id: "4",
@@ -63,6 +67,7 @@ const Messages = [
     messageTime: "1 day ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: true,
   },
   {
     id: "5",
@@ -71,6 +76,7 @@ const Messages = [
     messageTime: "2 days ago",
     messageText:
       "Hey there, this is my test for a post of my social app in React Native.",
+    isOnline: false,
   },
   {
     id: "4",
@@ -78,7 +84,8 @@ const Messages = [
     userImg: require("../../assets/users/user-3.jpg"),
     messageTime: "1 day ago",
     messageText:
-      "Hey there, this is my test for a post of my social app in React Native.",
+      "Hey there, this is my test for a post of my D social app in React Native.",
+    isOnline: false,
   },
   {
     id: "5",
@@ -86,7 +93,8 @@ const Messages = [
     userImg: require("../../assets/users/user-3.jpg"),
     messageTime: "2 days ago",
     messageText:
-      "Hey there, this is my test for a post of my social app in React Native.",
+      "Hey there, this is my test for a post of my DFsocial FD app in React Native.",
+    isOnline: true,
   },
 ];
 interface oUser {
@@ -95,6 +103,7 @@ interface oUser {
   userImg: any;
   messageTime: string;
   messageText: String;
+  isOnline: boolean
 }
 interface IMessenger extends IBaseProps {
   items: oUser;
@@ -102,11 +111,17 @@ interface IMessenger extends IBaseProps {
 
 const ItemMessenger: React.FC<IMessenger> = (props) => {
   const { items, navigation } = props;
-  const _navigationChatDetail = useCallback(() => {
-    console.info("====info====");
 
+
+  const _navigationChatDetail = useCallback(() => {
     navigation.navigate("ChatDetail", { item: items });
   }, [navigation]);
+  const statusOnline = useMemo(() => {
+    if (items.isOnline) {
+      return [styles.viewOnline, { backgroundColor: Colors.green_1 }]
+    }
+    return [styles.viewOnline];
+  }, [])
   return (
     <TouchableComponent
       style={styles.userInfoView}
@@ -114,6 +129,7 @@ const ItemMessenger: React.FC<IMessenger> = (props) => {
     >
       <View style={styles.userImageView}>
         <Image source={items.userImg} style={styles.imgUser} />
+        <View style={statusOnline} />
       </View>
       <View style={styles.userInfoRight}>
         <View style={styles.userInfoText}>
@@ -123,6 +139,9 @@ const ItemMessenger: React.FC<IMessenger> = (props) => {
         <View>
           <Text style={styles.userMessengerEnd}>{items.messageText}</Text>
         </View>
+        <View style={styles.countMessenger}>
+          <Text style={styles.textNumberMess}>4</Text>
+        </View>
       </View>
     </TouchableComponent>
   );
@@ -130,7 +149,8 @@ const ItemMessenger: React.FC<IMessenger> = (props) => {
 const ChatScreen: React.FC<IBaseProps> = (props) => {
   const { navigation } = props;
   const [t] = useTranslation();
-
+  const [searchText, setSearchText] = useState<string>();
+  
   const renderItemMessenger = useCallback(({ item, index }) => {
     return <ItemMessenger items={item} navigation={navigation} />;
   }, []);
@@ -138,17 +158,38 @@ const ChatScreen: React.FC<IBaseProps> = (props) => {
   const _keyExtrator = useCallback((item, index) => {
     return "key" + index;
   }, []);
+
+  const _onChangTextSearch = useCallback((text: string) => {
+    return setSearchText(text)
+  }, [])
+
+  const _onClearInput = useCallback(() => {
+    return setSearchText("")
+  }, [])
+
   return (
     <View style={styles.container}>
       <Header
-        btnIconRight={ic_noti}
-        backgroundColor={Colors.BLUE_OPACITY}
-        title={t("messenger")}
+        title={t("Messenger")}
+        backgroundColor={Colors.white}
+        titleStyle={{
+          fontSize: 25,
+          fontWeight: "bold",
+          color: Colors.black,
+        }}
+      />
+      <SearchInput
+        icon={ic_search}
+        placeholder='Search conventions'
+        value={searchText}
+        onChangText={_onChangTextSearch}
+        onClearInput={_onClearInput}
       />
       <FlatList
         data={Messages}
         keyExtractor={_keyExtrator}
         renderItem={renderItemMessenger}
+        contentContainerStyle={{ marginTop: 10 }}
       />
     </View>
   );
