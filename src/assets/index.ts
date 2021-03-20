@@ -25,6 +25,7 @@ export const img_profiles = require("./images/img_profile.jpg");
 export const ic_logout = require("./images/ic_logout.png");
 export const ic_close = require("./images/ic_close.png");
 export const ic_books = require("./images/ic_books.png");
+export const ic_search = require("./images/ic_search.png")
 
 // icon svg 
 
