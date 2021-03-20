@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/dattd/.gr
 MERGED from [:react-native-firebase_auth] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_async-storage] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -27,6 +28,7 @@ MERGED from [:react-native-spinkit] /Users/dattd/Desktop/React-native/AppPharmac
 MERGED from [:react-native-splash-screen] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/da036d5687a1d68ab8007e42d1f38e14/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/42abc2078ad0da08833e046e1a96933f/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/32d69f6b25789a80623bd9f8c555cace/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -52,14 +54,20 @@ MERGED from [androidx.browser:browser:1.3.0] /Users/dattd/.gradle/caches/transfo
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/0caea8347a9ef397f8895a8063f94371/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/fe8e71e101cbaf528cc486072ed4c28e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b78a5399ea9beee523afeb7dc0d01a7c/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/694c4657baee9e6702083ce68e496b26/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2740efb212666cc14dd7decbda483a8/transition-1.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/00f8f3e6245f82f14f34c6843bd6ff6b/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-auth:20.0.3] /Users/dattd/.gradle/caches/transforms-2/files-2.1/64f11b3c926b3f8b8bf87a7d0c5e61e6/jetified-firebase-auth-20.0.3/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e344058cfa653e9c49ed67360c8ef0f6/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/84ed3e8f28836a33e45a4835bbd8bbf3/play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2efbe949bd47ee0c84f2628589f35558/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5fea104bf0595ef6b3cd3e78ccd6a40a/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/877517e360ec51b39d57af412d761f93/play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e2aaf5f91c6641b992344f1ea98f250f/firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/60539b61da37d5cecc31d0830b3faea4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8a0e15d4ecc9f5e711991d194f368f19/play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5a10accc3b0d6d847a8db4b841b16ede/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ca8976134810ae7a66088b4d0258d154/firebase-iid-21.0.1/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/00f912dd79aab32f85042db58a22ea75/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d3caf54114e86177d18237a7364d1766/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
@@ -75,6 +83,7 @@ MERGED from [androidx.fragment:fragment:1.1.0] /Users/dattd/.gradle/caches/trans
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/4b2f76bfb138c3d04b4fdb7e4a57c3f4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d0b76de50009d02ae3a61625e9c61668/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2a604909fa57d86b75cb00eccc5776f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b6cf99732ce91a5a5aa8a65585bb65a/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d9dd1f832330f9830d5573b2c42f64c9/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/bd8d183608349f86318440748437998b/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ccf906420216b35becd418efa8fead91/customview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -142,16 +151,22 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users
 		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
 ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:5:5-65
+MERGED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+MERGED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
 	android:name
 		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
 		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:7:22-77
 application
-ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:5-27:19
+ADDED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:7-27:19
+MERGED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:7-27:19
+MERGED from /Users/dattd/Desktop/React-native/AppPharmacist/android/app/src/main/AndroidManifest.xml:8:7-27:19
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-43:19
 MERGED from [:react-native-community_datetimepicker] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
@@ -180,10 +195,18 @@ MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gra
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.firebase:firebase-auth:20.0.3] /Users/dattd/.gradle/caches/transforms-2/files-2.1/64f11b3c926b3f8b8bf87a7d0c5e61e6/jetified-firebase-auth-20.0.3/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:20.0.3] /Users/dattd/.gradle/caches/transforms-2/files-2.1/64f11b3c926b3f8b8bf87a7d0c5e61e6/jetified-firebase-auth-20.0.3/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e344058cfa653e9c49ed67360c8ef0f6/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e344058cfa653e9c49ed67360c8ef0f6/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2efbe949bd47ee0c84f2628589f35558/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2efbe949bd47ee0c84f2628589f35558/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/877517e360ec51b39d57af412d761f93/play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/877517e360ec51b39d57af412d761f93/play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e2aaf5f91c6641b992344f1ea98f250f/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e2aaf5f91c6641b992344f1ea98f250f/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/60539b61da37d5cecc31d0830b3faea4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/60539b61da37d5cecc31d0830b3faea4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5a10accc3b0d6d847a8db4b841b16ede/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5a10accc3b0d6d847a8db4b841b16ede/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ca8976134810ae7a66088b4d0258d154/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ca8976134810ae7a66088b4d0258d154/firebase-iid-21.0.1/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/00f912dd79aab32f85042db58a22ea75/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
@@ -278,6 +301,8 @@ MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native
 MERGED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-firebase_app] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/c2a0420626daa0fa1e5e4ba935ac2959/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-vector-icons] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -310,6 +335,8 @@ MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/
 MERGED from [:react-native-svg] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/6c1ca0710a3e8d3512c5a958a0a380cd/jetified-react-native-0.63.1/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/da036d5687a1d68ab8007e42d1f38e14/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/da036d5687a1d68ab8007e42d1f38e14/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8fb8b098331c470b5d1e8782f523f2f2/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/42abc2078ad0da08833e046e1a96933f/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
@@ -360,6 +387,8 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dattd
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/fe8e71e101cbaf528cc486072ed4c28e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b78a5399ea9beee523afeb7dc0d01a7c/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/b78a5399ea9beee523afeb7dc0d01a7c/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/694c4657baee9e6702083ce68e496b26/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/694c4657baee9e6702083ce68e496b26/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2740efb212666cc14dd7decbda483a8/transition-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.1.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2740efb212666cc14dd7decbda483a8/transition-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/00f8f3e6245f82f14f34c6843bd6ff6b/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -368,14 +397,24 @@ MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gra
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/33989af206de8df2bc991bb8c7a4e1ea/play-services-auth-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.3] /Users/dattd/.gradle/caches/transforms-2/files-2.1/64f11b3c926b3f8b8bf87a7d0c5e61e6/jetified-firebase-auth-20.0.3/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.3] /Users/dattd/.gradle/caches/transforms-2/files-2.1/64f11b3c926b3f8b8bf87a7d0c5e61e6/jetified-firebase-auth-20.0.3/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e344058cfa653e9c49ed67360c8ef0f6/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e344058cfa653e9c49ed67360c8ef0f6/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/84ed3e8f28836a33e45a4835bbd8bbf3/play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/84ed3e8f28836a33e45a4835bbd8bbf3/play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2efbe949bd47ee0c84f2628589f35558/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/dattd/.gradle/caches/transforms-2/files-2.1/2efbe949bd47ee0c84f2628589f35558/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5fea104bf0595ef6b3cd3e78ccd6a40a/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5fea104bf0595ef6b3cd3e78ccd6a40a/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/877517e360ec51b39d57af412d761f93/play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/877517e360ec51b39d57af412d761f93/play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e2aaf5f91c6641b992344f1ea98f250f/firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/e2aaf5f91c6641b992344f1ea98f250f/firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/60539b61da37d5cecc31d0830b3faea4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/60539b61da37d5cecc31d0830b3faea4/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8a0e15d4ecc9f5e711991d194f368f19/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/8a0e15d4ecc9f5e711991d194f368f19/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5a10accc3b0d6d847a8db4b841b16ede/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5a10accc3b0d6d847a8db4b841b16ede/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ca8976134810ae7a66088b4d0258d154/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:21.0.1] /Users/dattd/.gradle/caches/transforms-2/files-2.1/ca8976134810ae7a66088b4d0258d154/firebase-iid-21.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/00f912dd79aab32f85042db58a22ea75/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
@@ -406,6 +445,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dattd/.grad
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d0b76de50009d02ae3a61625e9c61668/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2a604909fa57d86b75cb00eccc5776f/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/a2a604909fa57d86b75cb00eccc5776f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b6cf99732ce91a5a5aa8a65585bb65a/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/5b6cf99732ce91a5a5aa8a65585bb65a/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d9dd1f832330f9830d5573b2c42f64c9/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/d9dd1f832330f9830d5573b2c42f64c9/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/dattd/.gradle/caches/transforms-2/files-2.1/bd8d183608349f86318440748437998b/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -548,6 +589,18 @@ ADDED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/
 		ADDED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-44
 	android:name
 		ADDED from [:react-native-firebase_messaging] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-84
+uses-feature#android.hardware.camera
+ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
 provider#com.imagepicker.FileProvider
 ADDED from [:react-native-image-picker] /Users/dattd/Desktop/React-native/AppPharmacist/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
