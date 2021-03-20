@@ -34,3 +34,8 @@ export const back = require("./images/back.png");
 
 export const img_user = require("./users/profile_default.png")
 
+export const close = require("./images/close.png");
+export const info = require("./images/info.png");
+export const focus = require("./images/focus.png");
+export const phone = require("./images/phone.png");
+export const barcode = require("./images/barcode.png");

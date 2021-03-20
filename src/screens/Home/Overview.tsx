@@ -10,6 +10,7 @@ import {
   FlatList,
 } from "react-native";
 import IconNews from "react-native-vector-icons/Ionicons";
+import { Screens } from "../../NavigationConfig";
 import colors from "../../utils/colors";
 import Colors from "../../utils/colors"
 import { IBaseProps } from "../../utils/interface";
@@ -49,8 +50,8 @@ const FeatureData = [
     icon: require("../../assets/images/wallet.png"),
     color: Colors.red,
     backgroundColor: Colors.lightRed,
-    routeName: "",
-    description: "home",
+    routeName: "StackScan",
+    description: "Look Up",
   },
   {
     id: 5,
@@ -113,9 +114,14 @@ const dataPromotion = [
 ];
 
 const ItemFeature: React.FC<IProductTop> = (props) => {
-  const { items } = props;
+  const { items ,navigation } = props;
+  const _onPressFeature = useCallback(()=>{
+    navigation.navigate(items?.routeName);
+  },[items])
   return (
-    <TouchableOpacity style={styles.viewItemFeature}>
+    <TouchableOpacity style={styles.viewItemFeature}
+    onPress={_onPressFeature}
+    >
       <View
         style={{
           ...styles.viewImgFeature,
@@ -145,6 +151,7 @@ const ItemProductTop: React.FC<IProductTop> = (props) => {
   );
 };
 const Overview: React.FC<IBaseProps> = (props) => {
+  const {navigation} = props
   const renderHeader = useMemo(() => {
     return (
       <View style={styles.headerContainer}>
@@ -181,7 +188,7 @@ const Overview: React.FC<IBaseProps> = (props) => {
   },[])
 
   const renderItemFeature = useCallback(({ item, index }) => {
-    return <ItemFeature items={item}/>
+    return <ItemFeature items={item} navigation={navigation}/>
   }, []);
   
   const renderPromoHeader = useMemo(()=>{

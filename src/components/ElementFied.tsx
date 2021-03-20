@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontSize: 15,
     fontWeight: "700",
-    color: Colors.gray,
+    color: Colors.gray_1,
   },
 });
 export default ElementFied;

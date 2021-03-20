@@ -22,8 +22,7 @@ const Tab = createBottomTabNavigator();
 const TabBottomMain = () => {
     const getTabBarVisibility = (route) => {
       const routeName = getFocusedRouteNameFromRoute(route)
-
-      if (routeName === "ChatDetail") {
+      if (routeName === "ChatDetail" || routeName === "StackScan") {
         return false;
       }
       return true;
@@ -42,12 +41,13 @@ const TabBottomMain = () => {
       <Tab.Screen
         name={Screens.Home}
         component={HomeStack}
-        options={{
+        options={({ route }) => ({
           tabBarLabel: Screens.Home,
           tabBarIcon: ({ color }) => (
             <Icon name='home' color={color} size={26} />
           ),
-        }}
+          tabBarVisible: getTabBarVisibility(route),
+        })}
       />
       <Tab.Screen
         name={Screens.Chat}

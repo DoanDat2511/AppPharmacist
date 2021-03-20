@@ -16,6 +16,7 @@ export const Screens = {
   Chat:"Chat",
   News:"News",
   MangeSetting: "MangeSetting",
-  ManagePharmacy:"ManagePharmacy"
-
+  ManagePharmacy:"ManagePharmacy",
+// stack home
+  ScanPharmacy:"ScanPharmacy"
 };
