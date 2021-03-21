@@ -13,16 +13,17 @@ import {ic_contact} from "../assets"
 import TouchableComponent from "./Button";
 interface IInputFied  extends DateTimePickerProps {
   title: string;
-    onOpenPicker: (event: GestureResponderEvent) => void;
+  value?:string
+  onOpenPicker: (event: GestureResponderEvent) => void;
 }
 
 const DatePicker: React.FC<IInputFied> = (props) =>{
-    const {title,onOpenPicker,...other} = props
+    const {title,value,onOpenPicker,...other} = props
     return (
       <View>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.viewInput}>
-          <Text style={styles.inputText} />
+          <Text style={styles.inputText}>{value}</Text>
           <TouchableComponent
             onPress={onOpenPicker}
             style={{ position: "absolute", right: 5 }}

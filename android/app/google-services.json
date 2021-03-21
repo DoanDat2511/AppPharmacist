@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1000319114483:android:15d668a09f85d0c211ab86",
+        "mobilesdk_app_id": "1:1000319114483:android:d500acf2c952335011ab86",
         "android_client_info": {
           "package_name": "com.apppharmacist"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1000319114483-ahhif0nu6sd01ivibcj8vg7lc6duhttn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apppharmacist",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
         {
           "client_id": "1000319114483-q9pa8ft2g8crurnedsr4b5qqc2c0ge7o.apps.googleusercontent.com",
           "client_type": 3
@@ -29,6 +37,13 @@
             {
               "client_id": "1000319114483-q9pa8ft2g8crurnedsr4b5qqc2c0ge7o.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1000319114483-7vsjbvsl1sq4a6sco1jj2va9qqma1vot.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.AppPharmacist"
+              }
             }
           ]
         }

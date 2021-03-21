@@ -1637,7 +1637,7 @@
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/xml_image_share_filepaths.xml.flat",
-        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/cac3132e2f4fcfaae44e1441f1662ea6/browser-1.3.0/res/xml/image_share_filepaths.xml"
+        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/58a2f6dbb0b9f0e0226289605e4e5ec6/browser-1.2.0/res/xml/image_share_filepaths.xml"
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
@@ -1705,7 +1705,7 @@
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_row.xml.flat",
-        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/cac3132e2f4fcfaae44e1441f1662ea6/browser-1.3.0/res/layout/browser_actions_context_menu_row.xml"
+        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/58a2f6dbb0b9f0e0226289605e4e5ec6/browser-1.2.0/res/layout/browser_actions_context_menu_row.xml"
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
@@ -1809,7 +1809,7 @@
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_page.xml.flat",
-        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/cac3132e2f4fcfaae44e1441f1662ea6/browser-1.3.0/res/layout/browser_actions_context_menu_page.xml"
+        "source": "/Users/dattd/.gradle/caches/transforms-2/files-2.1/58a2f6dbb0b9f0e0226289605e4e5ec6/browser-1.2.0/res/layout/browser_actions_context_menu_page.xml"
     },
     {
         "merged": "/Users/dattd/Desktop/React-native/AppPharmacist/android/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar.xml.flat",
