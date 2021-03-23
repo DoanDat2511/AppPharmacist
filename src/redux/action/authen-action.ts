@@ -1,12 +1,12 @@
-import { createTypeSagaAction } from "../redux-type-saga";
+import { createTypeSagaAction ,createTypeAction } from "../redux-type-saga";
 
-export const getListProductAction = createTypeSagaAction(
-  "GET_LIST_PRODUCT_ACTION"
+export const resendOtp = createTypeAction("RE_SEND_OTP");
+
+export const checkCredentialAccount = createTypeSagaAction(
+  "CHECK_CREDENTIAL_ACCOUNT"
 );
-export const getListUser = createTypeSagaAction("GET_LIST_USER");
-export const checkLoginAction = createTypeSagaAction("CHECK_LOGIN_ACTION");
-export const registryAction = createTypeSagaAction("REGISTRY_ACTION");
-export const logoutAction = createTypeSagaAction("LOGOUT_ACTION");
-export const forgetPasswordAction = createTypeSagaAction(
-  "FORGET_PASSWORD_ACTION"
-);
+
+export const checkVerifyOtp = createTypeSagaAction("CHECK_VERIFY_OTP")
+
+
+export const checkLogin = createTypeSagaAction("CHECK_LOGIN")

@@ -1,6 +1,7 @@
 import { fork, put,call, takeLatest } from "redux-saga/effects";
 
 import authenSaga from "./authen-saga"
+import userSaga from "./user-saga"
 import { initAppAction } from "../action/app-action";
 import { Screens } from "../../NavigationConfig";
 import { setI18n } from "../../utils/app-utils";
@@ -36,7 +37,7 @@ function* listener(action?: any) {
 
 function* worker(action?: any) {
   yield fork(authenSaga)
-
+  yield fork(userSaga)
 }
 
 export default function* appSaga(action?: any) {

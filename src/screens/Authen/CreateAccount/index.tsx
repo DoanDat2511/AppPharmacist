@@ -1,75 +1,61 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   View,
   Text,
-  StatusBar,
   ScrollView,
   Image,
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
 import moment from "moment"
+import { useDispatch } from "react-redux"
+import Snackbar from "react-native-snackbar";
+import auth from "@react-native-firebase/auth";
+import * as Animatable from "react-native-animatable";
 import ImagePicker, { ImagePickerResponse } from "react-native-image-picker";
-import  {
+import {
   CountryCode,
   Country
 } from "react-native-country-picker-modal";
-import auth from "@react-native-firebase/auth";
 
 import Styles from "./Styles";
-import { IBaseProps } from "../../../utils/interface";
-import { back, img_user } from "../../../assets";
 import Colors from "../../../utils/colors";
 import Header from "../../../components/Header";
-import TouchableComponent from "../../../components/Button";
+import { back, img_user } from "../../../assets";
+import { IBaseProps } from "../../../utils/interface";
 import InputFied from "../../../components/InputFied";
 import DatePicker from "../../../components/DatePicker";
 import PhonePicker from "../../../components/PhonePicker";
 import ModalPicker from "../../../components/ModalPicker";
-
+import TouchableComponent from "../../../components/Button";
+import { checkCredentialAccount } from "../../../redux/action/authen-action"
+import {
+  phoneNumberWithCode,
+  validateEmail
+} from "../../../utils/helpers";
+import ErrorMessger from "../../../components/ErrorMesseger";
 interface TCountry {
-  cca:CountryCode,
-  callingCode:string
+  cca: CountryCode,
+  callingCode: string
 }
 const CreateAccount: React.FC<IBaseProps> = (props) => {
   const { navigation } = props;
-
-  const [email, setEmail] = useState<string>();
-  const [imgPath, setImgPath] = useState<string>();
-  const [password, setPassword] = useState<string>()
+  const dispatch = useDispatch()
+  const [email, setEmail] = useState<string>("");
+  const [imgPath, setImgPath] = useState<string>("");
+  const [password, setPassword] = useState<string>("")
   const [isVisableOtp, setIsViableOtp] = useState<boolean>(false);
-  const [confirmPassword, setConfirmPasswrod] = useState<string>()
-  const [username, setUsername] = useState<string>()
-  const [birthday ,setBirthday] = useState<string>()
-  const [phoneNumber, setPhoneNumber] = useState<string>()
+  const [confirmPassword, setConfirmPasswrod] = useState<string>("")
+  const [username, setUsername] = useState<string>("")
+  const [birthday, setBirthday] = useState<string>("")
+  const [phoneNumber, setPhoneNumber] = useState<string>("")
+  const [address , setAddress] = useState<string>("")
   const [contryCode, setContryCode] = useState<TCountry>({
-    cca:"VN",
-    callingCode:"84"
+    cca: "VN",
+    callingCode: "84"
   });
   const [isVisibleDate, setIsVisibleDate] = useState<boolean>(false);
-  
-  useEffect(()=>{
 
-auth()
-  .createUserWithEmailAndPassword(
-    "dat.doe@example.com",
-    "dfdsf!"
-  )
-  .then(() => {
-    console.log("User account created & signed in!");
-  })
-  .catch((error) => {
-    if (error.code === "auth/email-already-in-use") {
-      console.log("That email address is already in use!");
-    }
-
-    if (error.code === "auth/invalid-email") {
-      console.log("That email address is invalid!");
-    }
-
-    console.error(error);
-  });
-  },[])
   const _onPressGoBack = useCallback(() => {
     navigation.goBack();
   }, [navigation]);
@@ -78,21 +64,24 @@ auth()
     setEmail(text);
   }, []);
 
-  const _onChangePassword = useCallback((text :string)=>{
+  const _onChangePassword = useCallback((text: string) => {
     setPassword(text)
-  },[])
+  }, [])
 
-  const _onChangeConfirmPassword = useCallback((text:string)=>{
+  const _onChangeConfirmPassword = useCallback((text: string) => {
     setConfirmPasswrod(text)
+  }, [])
+
+  const _onChangUsername = useCallback((text: string) => {
+    setUsername(text);
+  }, []);
+
+  const _onChangAddress = useCallback((text:string)=>{
+    setAddress(text)
   },[])
-  
-   const _onChangUsername = useCallback((text: string) => {
-     setUsername(text);
-   }, []);
-  
-  const _onChangePhone = useCallback((text:string)=>{
-  setPhoneNumber(text)
-  },[])
+  const _onChangePhone = useCallback((text: string) => {
+    setPhoneNumber(text)
+  }, [])
 
   const _onCancleDate = useCallback(() => {
     setIsVisibleDate(false);
@@ -104,8 +93,8 @@ auth()
 
   const _onConfirm = useCallback(
     (date) => {
-        setBirthday(moment(date).format("DD/MM/YYYY"));
-        setIsVisibleDate(false);
+      setBirthday(moment(date).format("DD/MM/YYYY"));
+      setIsVisibleDate(false);
     },
     [isVisibleDate]
   );
@@ -115,18 +104,42 @@ auth()
       cca: data.cca2,
     });
   }, []);
-  const _onOpenOTP = useCallback(() => {
-    console.log("object all", {
+  const _onOpenOTP = () => {
+    const payload = {
       email,
       password,
-      confirmPassword,
       username,
       imgPath,
-      phoneNumber,
-      contryCode,
-    });
-    // setIsViableOtp(true);
-    onRequestOtp()
+      address,
+      phoneNumber: phoneNumberWithCode(phoneNumber, contryCode?.callingCode)
+    }
+    if (email != "" && password != "" && confirmPassword != "" && birthday != "" && username != "" && confirmPassword != "" && phoneNumber !="" && address != "") {
+       if (warningUsername && warningPassword && warningPhone && warningDate && warningEmail && warningConfirmPass ) {
+       dispatch(checkCredentialAccount({ data: payload, setIsViableOtp }));
+      } else {
+        Snackbar.show({
+          text: "Các trường validate",
+          duration: 2000,
+        });
+      }
+    } else {
+      Snackbar.show({
+        text: "Nhập đủ các thông tin",
+        duration: 2000,
+      });
+    }
+  }
+
+  const dataModal = useMemo(() => {
+    const payload = {
+      email,
+      password,
+      username,
+      imgPath,
+      address,
+      phoneNumber: phoneNumberWithCode(phoneNumber, contryCode?.callingCode)
+    }
+    return payload
   }, [
     email,
     password,
@@ -135,11 +148,13 @@ auth()
     imgPath,
     contryCode,
     phoneNumber,
+    address
   ]);
 
-  const _onCloseOTP = useCallback(() => {
+  const _onCloseOTP = async () => {
+    await auth().currentUser.delete()
     setIsViableOtp(false);
-  }, []);
+  }
 
   const _openChooseImage = useCallback(async () => {
     const options = {
@@ -158,56 +173,103 @@ auth()
       } else if (response.customButton) {
         console.log("User tapped custom button: ", response.customButton);
       } else {
-          let path = getPlatformPath(response).value;
-          setImgPath(path)
+        let path = getPlatformPath(response).value;
+        setImgPath(path)
       }
     });
   }, [ImagePicker]);
 
-   const getPlatformPath = (image: ImagePickerResponse) => {
-     const { path, uri } = image;
-     return Platform.select({
-       android: { value: path },
-       ios: { value: uri },
-     });
-   };
+  const getPlatformPath = (image: ImagePickerResponse) => {
+    const { path, uri } = image;
+    return Platform.select({
+      android: { value: path },
+      ios: { value: uri },
+    });
+  };
 
-   const getPlatformURI = (imagePath) => {
+  const getPlatformURI = (imagePath) => {
     let imgSource = imagePath
     if (isNaN(imagePath)) {
       imgSource = { uri: imagePath }
-      
-        imgSource = { uri: imagePath }
-        if (Platform.OS == "android") {
-          imgSource.uri = "file:///" + imgSource.uri
-        }
+
+      imgSource = { uri: imagePath }
+      if (Platform.OS == "android") {
+        imgSource.uri = "file:///" + imgSource.uri
+      }
     }
     return imgSource
   }
 
-    const verifyPhoneNumber = async (phone) => {
-      try {
-        const confirm = await auth()
-          .verifyPhoneNumber(phone , 1, true)
-          .catch((error) => {
-            console.log("==",error.message);
-          });
-      } catch (err) {
-            console.log(err.message);
-       
+  const warningEmail = useMemo(() => {
+    if (email != "") {
+      if (validateEmail(email)) {
+        return true
       }
-    };
-    const onRequestOtp = async () => {
-   
-          // phoneInputRef.current.blur();
+      return false
+    }
+    return true
 
-        try {
-                    await verifyPhoneNumber('+84963960830');
-        } catch (error) {
-          console.log("erro request otp",error)
-        }
-      
-    };
+  }, [email])
+
+  const warningPassword = useMemo(() => {
+    if (password != "") {
+      if (password?.length >= 8) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [password]);
+
+  const warningConfirmPass = useMemo(() => {
+    if (confirmPassword != "") {
+      if (confirmPassword?.length >= 8 && confirmPassword === password) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [confirmPassword, password]);
+
+  const warningUsername = useMemo(() => {
+    if (username != "") {
+      if (username?.length >= 2) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [username]);
+
+    const warningAddress = useMemo(() => {
+    if (address != "") {
+      if (address?.length > 2) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [birthday]);
+
+  const warningDate = useMemo(() => {
+    if (birthday != "") {
+      if (birthday?.length >= 2) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [birthday]);
+
+  const warningPhone = useMemo(() => {
+    if (phoneNumber != "") {
+      if (phoneNumber?.length >= 9) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }, [phoneNumber]);
 
   return (
     <View style={Styles.container}>
@@ -223,7 +285,6 @@ auth()
           color: "black",
         }}
       />
-
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : null}
       >
@@ -240,12 +301,12 @@ auth()
                   style={Styles.avatarImage}
                 />
               ) : (
-                <Image
-                  source={img_user}
-                  resizeMode='center'
-                  style={Styles.avatarImage}
-                />
-              )}
+                  <Image
+                    source={img_user}
+                    resizeMode='center'
+                    style={Styles.avatarImage}
+                  />
+                )}
             </TouchableComponent>
             <View style={Styles.viewContentAvatar}>
               <Text style={Styles.titleAvatar}>Avatar</Text>
@@ -260,21 +321,41 @@ auth()
           </View>
           <View style={Styles.viewBody}>
             <InputFied title='Email' onChangeText={_onChangeEmail} />
+            {!warningEmail && (
+
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"Username must be 4 characters long."} />
+              </Animatable.View>
+            )}
             <InputFied
               title='Password'
               secureTextEntry
               onChangeText={_onChangePassword}
             />
+            {!warningPassword && (
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"Password must be 4 characters long."} />
+              </Animatable.View>
+            )}
             <InputFied
               title='Re Password'
               secureTextEntry
               onChangeText={_onChangeConfirmPassword}
             />
+            {!warningConfirmPass && (
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"Password re be 4 characters long."} />
+              </Animatable.View>
+            )}
             <InputFied
-              title='Nick Name'
-              secureTextEntry
+              title='Username'
               onChangeText={_onChangUsername}
             />
+            {!warningUsername && (
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"Password must be 4 characters long."} />
+              </Animatable.View>
+            )}
             <DatePicker
               title='Birthday'
               onOpenPicker={_onOpenDate}
@@ -286,6 +367,20 @@ auth()
               locale='en'
               onCancel={_onCancleDate}
             />
+            {!warningDate &&
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"date must be 4 characters long."} />
+              </Animatable.View>
+            }
+            <InputFied
+              title='Address'
+              onChangeText={_onChangAddress}
+            />
+             {!warningAddress &&
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"date must be 4 characters long."} />
+              </Animatable.View>
+            }
             <PhonePicker
               title='Phone'
               keyboardType='numeric'
@@ -294,16 +389,24 @@ auth()
               onSelect={_onSelectCountry}
               valueCountry={contryCode}
             />
+            {!warningPhone &&
+              <Animatable.View animation='fadeInLeft' duration={500}>
+                <ErrorMessger title={"phone must be 4 characters long."} />
+              </Animatable.View>
+            }
           </View>
-          <TouchableComponent style={Styles.viewButton} onPress={_onOpenOTP}>
+          <TouchableComponent style={Styles.viewButton} onPress={_onOpenOTP}
+          >
             <Text style={Styles.titleButton}>REGISTER</Text>
           </TouchableComponent>
-          <View style={{ height: 60 }} />
+          <View style={{ height: 100 }} />
           {isVisableOtp && (
             <ModalPicker
               visible={isVisableOtp}
               animationType='none'
               onCloseModal={_onCloseOTP}
+              data={dataModal}
+              navigation={navigation}
             />
           )}
         </ScrollView>
