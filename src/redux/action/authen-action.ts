@@ -9,4 +9,6 @@ export const checkCredentialAccount = createTypeSagaAction(
 export const checkVerifyOtp = createTypeSagaAction("CHECK_VERIFY_OTP")
 
 
-export const checkLogin = createTypeSagaAction("CHECK_LOGIN")
+export const checkLoginAction = createTypeSagaAction("CHECK_LOGIN_ACTION")
+
+export const logoutAction = createTypeSagaAction("LOGOUT_ACTION")

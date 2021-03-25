@@ -27,13 +27,13 @@ import { useSelector, useDispatch } from "react-redux";
 import * as Animatable from "react-native-animatable";
 import ActionSheet from "react-native-actionsheet";
 import auth from "@react-native-firebase/auth";
-import IconSearch from "react-native-vector-icons/AntDesign";
+
 
 import styles from "./Styles";
 import TouchableComponent from "../../../components/Button";
 import { sGetLanguage } from "../../../redux/selectors";
 import { setLanguageAction } from "../../../redux/action/app-action";
-// import { checkLoginAction } from "../../../redux/action/authen-action";
+import { checkLoginAction } from "../../../redux/action/authen-action";
 import Colors from "../../../utils/colors";
 import { ic_contact, ic_scan, ic_down, img_polygons } from "../../../assets";
 import Facebook_Icon from "../../../assets/icons/Facebook_Icon";
@@ -134,14 +134,14 @@ const Login: React.FC<IBaseProps> = (props) => {
   }, []);
 
   const _onPressLogin = useCallback(() => {
-    // dispatch(
-    //   checkLoginAction({
-    //     username,
-    //     password,
-    //     navigation,
-    //   })
-    // );
-  }, [username, password]);
+    dispatch(
+      checkLoginAction({
+        email:username,
+        password,
+        navigation,
+      })
+    );
+  }, [username, password ,navigation]);
 
   const _onPressLoginFaceBook = useCallback(() => {
     navigation.navigate(Screens.Tabbar);

@@ -2,29 +2,15 @@ import auth from "@react-native-firebase/auth";
 import firestore from '@react-native-firebase/firestore';
 import moment from "moment"
 import {
-  uploadImageToStorage,
+    uploadImageToStorage,
 } from "../utils/helpers";
 
-import { DIR_IMG_PREFIX, DIR_USER_AVATAR ,COLLECTION } from "../utils/constant"
+import { DIR_IMG_PREFIX, DIR_USER_AVATAR, COLLECTION } from "../utils/constant"
 
-import {EAdmin ,EAccept} from "../types/Authen"
+import { EAdmin, EAccept } from "../types/Authen"
+import { error } from "react-native-gifted-chat/lib/utils";
 
-// export  interface IUser {
-//     email: string,
-//     password: string,
-//     gmail: string,
-//     id:string,
-//     phoneNumber: string,
-//     address: string,
-//     isAdmin: number,
-//     createAt: string,
-//     updateAt: string,
-//     deleteAt: string,
-//     isOnline: boolean,
-//     deviceToken : Array<any>,
-//     isAccept: number
-// }
-const handleCheckEmail = async (email: string, password: string, phoneNumber: string) :Promise<boolean>  => {
+const handleCheckEmail = async (email: string, password: string, phoneNumber: string): Promise<boolean> => {
     var result = true
     const snapShotEmail = await firestore()
         .collection(COLLECTION.User)
@@ -47,7 +33,7 @@ const handleCheckEmail = async (email: string, password: string, phoneNumber: st
 
 
 };
-const verifyPhoneNumber = async (phone) : Promise<any> => {
+const verifyPhoneNumber = async (phone): Promise<any> => {
     const confirm = await auth()
         .verifyPhoneNumber(phone, 1, true)
     return confirm;
@@ -55,21 +41,22 @@ const verifyPhoneNumber = async (phone) : Promise<any> => {
 
 const addUserFirestore = async (data: any) => {
 
-    const imgPath =  await uploadImageToStorage(DIR_IMG_PREFIX,data?.imgPath,DIR_USER_AVATAR)
+    const imgPath = await uploadImageToStorage(DIR_IMG_PREFIX, data?.imgPath, DIR_USER_AVATAR)
 
     const result = await firestore().collection(COLLECTION.User).add({
         ...data,
         imgPath,
-        isAdmin:EAdmin.NORMAL,
-        isAccept:EAccept.WAITTING,
-        createAt:moment().format('DD/MM/YYYY, h:mm:ss a'),
-        updateAt:"",
-        deleteAt:"",
+        uid: auth().currentUser.uid,
+        isAdmin: EAdmin.NORMAL,
+        isAccept: EAccept.WAITTING,
+        createAt: moment().format('DD/MM/YYYY, h:mm:ss a'),
+        updateAt: "",
+        deleteAt: "",
         isOnline: false,
-        deviceToken:[]
+        deviceToken: []
 
     })
-    if (result && imgPath ) {
+    if (result) {
         await firestore().collection(COLLECTION.User).doc(result.id).update({
             id: result.id
         })
@@ -93,4 +80,45 @@ const verifyOtp = async (confirm, otp) => {
 
 
 };
-export { handleCheckEmail, verifyPhoneNumber, verifyOtp ,addUserFirestore };
+
+const checkLoginApi = async (email: string, password: string) => {
+
+    if (email && password) {
+       
+        const userData = await auth().signInWithEmailAndPassword(email.trim(), password.trim())
+        const { user } = userData
+
+        const result =  await firestore().collection(COLLECTION.User).where("uid", "==", user.uid).get()
+        if (result) {
+            console.log("++++ result",result?.docs[0]?.data())
+            return result?.docs[0]?.data()
+        }
+        return null
+
+    } else {
+        throw new error("Username , password")
+    }
+
+
+}
+const changeStatusOnline = async(status: boolean, id :string) =>{
+    if(id) {
+        if(status){
+            const handle = await firestore().collection(COLLECTION.User).doc(id).update({isOnline: status})
+        }else{
+            const handle = await firestore().collection(COLLECTION.User).doc(id).update({isOnline: status ,offlineAt: new Date()})
+        }
+    }
+}
+
+const signInWithFirbase = async(email:string, password:string) =>{
+    if(email && password){
+        const userData = await auth().signInWithEmailAndPassword(email.trim(), password.trim())
+
+    }
+}
+
+const logoutApi = async() =>{
+    await auth().signOut()
+}
+export { handleCheckEmail, verifyPhoneNumber, verifyOtp,checkLoginApi, addUserFirestore ,changeStatusOnline ,logoutApi,signInWithFirbase};

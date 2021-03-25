@@ -3,17 +3,18 @@ import {
   View,
   Text,
   SafeAreaView,
-  StyleSheet,
   Image,
   TouchableOpacity,
   StatusBar,
   FlatList,
 } from "react-native";
+import { useDispatch, useSelector } from "react-redux"
 import IconNews from "react-native-vector-icons/Ionicons";
 import { Screens } from "../../NavigationConfig";
 import colors from "../../utils/colors";
 import Colors from "../../utils/colors"
 import { IBaseProps } from "../../utils/interface";
+import { SGetUserInfor } from "../../redux/selectors"
 import styles from "./Styles";
 
 interface IProductTop extends IBaseProps {
@@ -42,8 +43,8 @@ const FeatureData = [
     icon: require("../../assets/images/internet.png"),
     color: Colors.primary,
     backgroundColor: Colors.lightGreen,
-    routeName: "",
-    description: "home",
+    routeName: "ChatDetail",
+    description: "conversation",
   },
   {
     id: 4,
@@ -114,13 +115,13 @@ const dataPromotion = [
 ];
 
 const ItemFeature: React.FC<IProductTop> = (props) => {
-  const { items ,navigation } = props;
-  const _onPressFeature = useCallback(()=>{
+  const { items, navigation } = props;
+  const _onPressFeature = useCallback(() => {
     navigation.navigate(items?.routeName);
-  },[items])
+  }, [items])
   return (
     <TouchableOpacity style={styles.viewItemFeature}
-    onPress={_onPressFeature}
+      onPress={_onPressFeature}
     >
       <View
         style={{
@@ -151,47 +152,56 @@ const ItemProductTop: React.FC<IProductTop> = (props) => {
   );
 };
 const Overview: React.FC<IBaseProps> = (props) => {
-  const {navigation} = props
+  const { navigation } = props
+  const dispatch = useDispatch()
+  const userInfor = useSelector(SGetUserInfor)
+
   const renderHeader = useMemo(() => {
     return (
       <View style={styles.headerContainer}>
         <View>
           <Text style={styles.titleHello}>Hello!</Text>
-          <Text style={styles.textUsername}>Doan Dat</Text>
+          <Text style={styles.textUsername}>{userInfor?.getIn(["username"])}</Text>
         </View>
         <View style={styles.viewNoti}>
           <TouchableOpacity>
-            <IconNews name='md-notifications-outline' size={22} tintColor={Colors.secondary}/>
+            <IconNews name='md-notifications-outline' size={22} tintColor={Colors.secondary} />
           </TouchableOpacity>
           <View style={styles.dotView} />
         </View>
       </View>
     );
-  }, []);
+  }, [userInfor]);
   const renderBannar = useMemo(() => {
     return (
       <View style={styles.viewBannar}>
-        <Image
-          style={styles.imgBannar}
-          source={require("../../assets/users/user-3.jpg")}
-        />
+        {userInfor?.getIn(["imgPath"]) ?
+          <Image
+            style={styles.imgBannar}
+            source={{ uri: userInfor?.getIn(["imgPath"]) }}
+          /> :
+          <Image
+            style={styles.imgBannar}
+            source={require("../../assets/users/user-3.jpg")}
+          />
+        }
       </View>
     );
-  }, []);
+  }, [userInfor]);
 
-  const headerFeature = useMemo(()=>{
-      return (
-        <View style={styles.viewHeaderFeature}>
-            <Text style={styles.titleFeature}>Features</Text>
-        </View>
-      )
-  },[])
+  const headerFeature = useMemo(() => {
+    return (
+      <View style={styles.viewHeaderFeature}>
+        <Text style={styles.titleFeature}>Features</Text>
+      </View>
+    )
+  }, [])
 
   const renderItemFeature = useCallback(({ item, index }) => {
-    return <ItemFeature items={item} navigation={navigation}/>
+    return <ItemFeature items={item} navigation={navigation} />
   }, []);
-  
-  const renderPromoHeader = useMemo(()=>{
+
+  const renderPromoHeader = useMemo(() => {
     return (
       <View
         style={{
@@ -209,7 +219,7 @@ const Overview: React.FC<IBaseProps> = (props) => {
         </TouchableOpacity>
       </View>
     );
-  },[])
+  }, [])
   const renderFeature = () => {
     return (
       <FlatList
@@ -242,8 +252,8 @@ const Overview: React.FC<IBaseProps> = (props) => {
   }, []);
   return (
     <>
-    <StatusBar barStyle="dark-content"></StatusBar>
-      <SafeAreaView  style={styles.container}>
+      <StatusBar barStyle="dark-content"></StatusBar>
+      <SafeAreaView style={styles.container}>
         <FlatList
           ListHeaderComponent={headerComponent}
           data={dataPromotion}

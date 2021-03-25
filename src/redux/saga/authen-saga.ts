@@ -2,7 +2,8 @@ import {
   checkCredentialAccount,
   checkVerifyOtp,
   resendOtp,
-  checkLogin
+  checkLoginAction,
+  logoutAction
 } from "../action/authen-action";
 import { fork, call, takeLatest, put, delay } from "redux-saga/effects";
 import Snackbar from "react-native-snackbar";
@@ -11,8 +12,12 @@ import {
   verifyPhoneNumber,
   verifyOtp,
   addUserFirestore,
+  checkLoginApi,
+  changeStatusOnline,
+  logoutApi
 } from "../../api/authen-api";
-
+import {remove, set} from "../../utils/storage"
+import {USER_INFOR} from "../../utils/constant"
 import { addSpinnerSaga } from "../redux-type-saga";
 
 
@@ -23,10 +28,9 @@ function* sCheckCridentialAccount(action?: any) {
     const results = yield call(handleCheckEmail, data.email, data.password, data.phoneNumber);
     if (results) {
       const resultOpt = yield call(verifyPhoneNumber, data.phoneNumber);
-      
-      if (resultOpt) {
         setIsViableOtp(true);
-
+      if (resultOpt) {
+      
          yield delay(2000);
         yield put(checkCredentialAccount.done(resultOpt));
        
@@ -36,7 +40,7 @@ function* sCheckCridentialAccount(action?: any) {
     }
   } catch (error) {
     let textError = "";
-  
+
     Snackbar.show({
       text: error.message,
       duration: 2000,
@@ -60,9 +64,7 @@ function* sCheckVerifyOtp(action?: any) {
            }
          }
        });
-      
     }
-  
     setIsLoading(false);
   } catch (error) {
     setIsLoading(false);
@@ -92,12 +94,45 @@ function* sResendOtp(action?: any) {
 
 }
 
-function * sCheckLogin(action?: any){
+function* sCheckLogin(action?: any){
+  const {email, password ,navigation} = action.payload
   try {
-    
-  } catch (error) {
-    
+    const result = yield  call(checkLoginApi,email,password)
+    if(result && result.isAccept === 1){
+      yield call(changeStatusOnline,true,result.id)
+      yield put(checkLoginAction.done(result))
+      yield set(USER_INFOR,result)
+      yield navigation.navigate("Tabbar",{screen:"Home"});
+    }
+  } catch (err) {
+      Snackbar.show({
+        text: err.message,
+        duration: 2000,
+      });
   }
+}
+
+function* sLogout (action?:any){
+    const {id , navigation} = action.payload
+    console.log("payload ,",id)
+
+    try {
+      if(id){
+          yield navigation.navigate("Login");
+         yield call(remove, USER_INFOR);
+         yield put(checkLoginAction.done({}));
+           yield call(changeStatusOnline, false, id);
+       
+         yield call(logoutApi);
+      }
+    
+     
+    } catch (err) {
+        Snackbar.show({
+          text: err.message,
+          duration: 2000,
+        });
+    }
 }
 
 function* listener(action?: any) {
@@ -113,7 +148,8 @@ function* listener(action?: any) {
     resendOtp.type,
     addSpinnerSaga(sResendOtp)
   );
-   yield takeLatest(checkLogin.type, addSpinnerSaga(sCheckLogin));
+   yield takeLatest(checkLoginAction.type, addSpinnerSaga(sCheckLogin));
+   yield takeLatest(logoutAction.type, sLogout);
 }
 
 function* worker(action?: any) { }

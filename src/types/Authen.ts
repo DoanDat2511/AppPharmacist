@@ -4,6 +4,7 @@ export   interface IUser {
     gmail: string,
     id:string,
     phoneNumber: string,
+    imgPath?:string,
     address: string,
     isAdmin: number,
     createAt: string,
@@ -12,6 +13,7 @@ export   interface IUser {
     isOnline: boolean,
     deviceToken : Array<any>,
     isAccept: number
+    uid:string
 }
 
 export  enum EAdmin {

@@ -21,7 +21,7 @@ export enum AppStatus {
 
 export interface IAuthenState {
   credential: IImmutableMap<any>;
-  userInfo: IImmutableMap<>
+  userInfo: IImmutableMap<any>;
 }
 
 export interface ItemBalance {
