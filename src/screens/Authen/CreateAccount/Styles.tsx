@@ -16,12 +16,13 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   avatarImage: {
-    width: 60,
-    height: 60,
+    width: "100%",
+    height: "100%",
+    borderRadius: 2,
   },
   chooseCamera: {
-    width: 60,
-    height: 70,
+    width: 80,
+    height: 100,
   },
   viewNoteAvatar: {
     marginTop: 10,
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
   },
   viewContentAvatar: {
-    marginHorizontal: 20,
+    marginHorizontal: 15,
   },
   titleAvatar: {
     fontSize: 18,
@@ -48,19 +49,24 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     marginVertical: 20,
   },
-  viewButton:{
-    marginHorizontal:20,
-    justifyContent:"center",
-    alignItems:"center",
-    paddingVertical:10,
-    backgroundColor:Colors.BLUE_OPACITY,
-    borderRadius:5,
+  viewButton: {
+    marginHorizontal: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 10,
+    backgroundColor: Colors.BLUE_OPACITY,
+    borderRadius: 5,
   },
-  titleButton:{
-    fontSize:16,
-    fontWeight:"bold",
-    color:Colors.white
-  }
+  titleButton: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: Colors.white,
+  },
+  errorMsg: {
+    color: Colors.RED,
+    fontSize: 12,
+    paddingBottom:5,
+  },
 });
 
 export default styles;

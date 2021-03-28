@@ -1,111 +1,158 @@
 import {
+  checkCredentialAccount,
+  checkVerifyOtp,
+  resendOtp,
   checkLoginAction,
-  getListProductAction,
-  getListUser,
-  registryAction,
-  logoutAction,
-  forgetPasswordAction,
+  logoutAction
 } from "../action/authen-action";
 import { fork, call, takeLatest, put, delay } from "redux-saga/effects";
 import Snackbar from "react-native-snackbar";
-
-import { set, remove } from "../../utils/storage";
+import {
+  handleCheckEmail,
+  verifyPhoneNumber,
+  verifyOtp,
+  addUserFirestore,
+  checkLoginApi,
+  changeStatusOnline,
+  logoutApi
+} from "../../api/authen-api";
+import {remove, set} from "../../utils/storage"
+import {USER_INFOR} from "../../utils/constant"
 import { addSpinnerSaga } from "../redux-type-saga";
 
-function* sgCheckLoginUser(action?) {
+
+function* sCheckCridentialAccount(action?: any) {
   try {
-    // const { username, password, navigation } = action.payload;
-    // const result = yield call(loginCtr, username, password);
-    // console.log("result", result);
-    // if (result.token && result) {
-    //   yield set(authen_login_storerage, result);
-    //   yield put(checkLoginAction.done(result));
-    //   navigation.navigate("DrawerStack");
-    //   return;
-    // }
-    // throw new Error(result.message);
-  } catch (err) {
-    Snackbar.show({ text: err.message, duration: Snackbar.LENGTH_LONG });
-    console.log("sgCheckLoginUser error", err);
+    const { data, setIsViableOtp } = action.payload;
+    console.log("==== data", data)
+    const results = yield call(handleCheckEmail, data.email, data.password, data.phoneNumber);
+    if (results) {
+      const resultOpt = yield call(verifyPhoneNumber, data.phoneNumber);
+        setIsViableOtp(true);
+      if (resultOpt) {
+      
+         yield delay(2000);
+        yield put(checkCredentialAccount.done(resultOpt));
+       
+      }
+    } else {
+      throw new Error("Số điện thoại hoặc email đã đã được sử dụng");
+    }
+  } catch (error) {
+    let textError = "";
+
+    Snackbar.show({
+      text: error.message,
+      duration: 2000,
+    });
   }
 }
-function* sgGeListProduct(action?) {
+
+function* sCheckVerifyOtp(action?: any) {
+  const { confirm, data, otp, setIsLoading, navigation } = action.payload;
   try {
-    yield put(
-      getListProductAction.done([
-        {
-          name: "da dfasd asfd",
-        },
-      ])
+    const result = yield call(verifyOtp, confirm, otp);
+    if (result) {
+      yield call(addUserFirestore, data);
+      yield Snackbar.show({
+         text: "Đăng ký thành công vui lòng chờ admin phê duyệt !",
+         duration: 5000,
+         action:{
+           text:"Ok",
+           onPress:()=>{
+              navigation.navigate("Login")
+           }
+         }
+       });
+    }
+    setIsLoading(false);
+  } catch (error) {
+    setIsLoading(false);
+    Snackbar.show({
+      text: error.message,
+      duration: 2000,
+    });
+  }
+}
+function* sResendOtp(action?: any) {
+  const { phoneNumber } = action.payload
+  try {
+    const result = yield call(
+      verifyPhoneNumber,
+      phoneNumber
     );
+
+    if (result) {
+      yield put(checkCredentialAccount.done(result));
+    }
   } catch (error) {
-    console.log("sgGetHistory error", error);
+    Snackbar.show({
+      text: error.message,
+      duration: 2000,
+    });
   }
-}
-function* sgGetListUser(action?) {
-  // const dataResult = yield call(getAllListUser);
-  try {
-    // yield put(getListUser.done(dataResult));
-  } catch (error) {
-    console.log("error sgGetListUser", error);
-  }
+
 }
 
-function* sgRegistry(action?) {
-  const { body, dataParamer, navigation } = action.payload;
+function* sCheckLogin(action?: any){
+  const {email, password ,navigation} = action.payload
   try {
-    // const result = yield call(resgitry, body, dataParamer);
-    // console.log("result", result);
-    // if (result.status === 200) {
-    //   yield put(registryAction.done(result));
-    //   Snackbar.show({ text: result.message, duration: Snackbar.LENGTH_LONG });
-    //   navigation.goBack();
-    // }
-  } catch (error) {
-    Snackbar.show({ text: error, duration: Snackbar.LENGTH_LONG });
-  }
-}
-
-function* sgLogout(action?) {
-  try {
-    const { token, navigation, onCloseDrawer } = action.payload;
-    // const result = yield call(logout, token);
-    // if (!result) {
-    //   yield navigation.navigate("Login");
-    //   yield onCloseDrawer();
-    //   return;
-    // }
+    const result = yield  call(checkLoginApi,email,password)
+    if(result && result.isAccept === 1){
+      yield call(changeStatusOnline,true,result.id)
+      yield put(checkLoginAction.done(result))
+      yield set(USER_INFOR,result)
+      yield navigation.navigate("Tabbar",{screen:"Home"});
+    }
   } catch (err) {
-    console.log("sgLogout error", err);
+      Snackbar.show({
+        text: err.message,
+        duration: 2000,
+      });
   }
 }
 
-function* sgForgetPassword(action?) {
-  // try {
-  //   const { email } = action.payload;
-  //   const result = yield call(forgetPassword, email);
-  //   console.log('resut saga',result)
-  //   if (result.status===200) {
-  //     // alert('than cong')
-  //     Snackbar.show({text: result?.message, duration: Snackbar.LENGTH_LONG })
-  //   }
-  // } catch (err) {
-  //   Snackbar.show({text: err.message, duration: Snackbar.LENGTH_LONG })
+function* sLogout (action?:any){
+    const {id , navigation} = action.payload
+    console.log("payload ,",id)
 
-  //   console.log("sgForgetPassword error", err);
-  // }
+    try {
+      if(id){
+          yield navigation.navigate("Login");
+         yield call(remove, USER_INFOR);
+         yield put(checkLoginAction.done({}));
+           yield call(changeStatusOnline, false, id);
+       
+         yield call(logoutApi);
+      }
+    
+     
+    } catch (err) {
+        Snackbar.show({
+          text: err.message,
+          duration: 2000,
+        });
+    }
 }
 
 function* listener(action?: any) {
-  yield takeLatest(checkLoginAction.type, addSpinnerSaga(sgCheckLoginUser));
-  yield takeLatest(getListProductAction.type, sgGeListProduct);
-  yield takeLatest(getListUser.type, sgGetListUser);
-  yield takeLatest(registryAction.type, addSpinnerSaga(sgRegistry));
-  yield takeLatest(logoutAction.type, sgLogout);
-  yield takeLatest(forgetPasswordAction.type, addSpinnerSaga(sgForgetPassword));
+  yield takeLatest(
+    checkCredentialAccount.type,
+    addSpinnerSaga(sCheckCridentialAccount)
+  );
+  yield takeLatest(
+    checkVerifyOtp.type,
+    sCheckVerifyOtp
+  );
+  yield takeLatest(
+    resendOtp.type,
+    addSpinnerSaga(sResendOtp)
+  );
+   yield takeLatest(checkLoginAction.type, addSpinnerSaga(sCheckLogin));
+   yield takeLatest(logoutAction.type, sLogout);
 }
 
-function* worker(action?: any) {}
+function* worker(action?: any) { }
 export default function* authenSaga(action?: any) {
   yield fork(listener);
   yield fork(worker);

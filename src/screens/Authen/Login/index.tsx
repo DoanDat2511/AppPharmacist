@@ -27,7 +27,7 @@ import { useSelector, useDispatch } from "react-redux";
 import * as Animatable from "react-native-animatable";
 import ActionSheet from "react-native-actionsheet";
 import auth from "@react-native-firebase/auth";
-import IconSearch from "react-native-vector-icons/AntDesign";
+
 
 import styles from "./Styles";
 import TouchableComponent from "../../../components/Button";
@@ -136,12 +136,12 @@ const Login: React.FC<IBaseProps> = (props) => {
   const _onPressLogin = useCallback(() => {
     dispatch(
       checkLoginAction({
-        username,
+        email:username,
         password,
         navigation,
       })
     );
-  }, [username, password]);
+  }, [username, password ,navigation]);
 
   const _onPressLoginFaceBook = useCallback(() => {
     navigation.navigate(Screens.Tabbar);

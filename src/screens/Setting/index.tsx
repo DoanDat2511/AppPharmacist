@@ -1,6 +1,6 @@
-import React, {useState} from "react"
+import React, {useCallback, useState} from "react"
 import { View, Text, Switch, ScrollView } from "react-native";
-
+import { useSelector, useDispatch } from "react-redux"
 
 import styles from "./Styles"
 import Header from "../../components/Header"
@@ -17,8 +17,21 @@ import Icon from "react-native-vector-icons/Ionicons"
 import ElementFied from "../../components/ElementFied";
 import ProfileIcon from "../../assets/icons/Profile_icon";
 import LogoutIcon from "../../assets/icons/Logout_icon";
+import { SGetUserInfor } from "../../redux/selectors";
+import { logoutAction } from "../../redux/action/authen-action";
 const Setting: React.FC<IBaseProps> = (props) =>{
+
+    const { navigation } = props
     const [isEnabled, setIsEnabled] = useState(false);
+    const dispatch = useDispatch()
+    const userInfor = useSelector(SGetUserInfor)
+
+    const  onPressLogout = useCallback(()=>{
+          if(userInfor?.getIn(["id"])){
+            dispatch(logoutAction({navigation,id:userInfor?.getIn(["id"])}))
+          }
+    },[userInfor,navigation])
+
     const toggleSwitch = () =>
       setIsEnabled((previousState) => !previousState);
 
@@ -79,7 +92,9 @@ const Setting: React.FC<IBaseProps> = (props) =>{
             <Text style={styles.titleComom}>Account</Text>
             <View style={styles.viewContainerEle}>
               <ElementFied title='Edit Profile' icons={<ProfileIcon />} statusBorder />
-              <ElementFied title='Logout' icons={<LogoutIcon />} />
+              <ElementFied title='Logout' icons={<LogoutIcon />} 
+                onPressElement={onPressLogout}
+              />
             </View>
           </View>
         </ScrollView>

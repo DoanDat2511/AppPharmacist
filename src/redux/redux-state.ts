@@ -2,6 +2,7 @@ import Immutable from "immutable";
 import { ITypeReduxPendingState } from "./redux-type-saga";
 import { IImmutableMap } from "../utils/interface";
 
+import {IUser} from "../types/Authen"
 // Store
 export interface IStore extends ITypeReduxPendingState {
   appState: IImmutableAppState;
@@ -19,10 +20,8 @@ export enum AppStatus {
 }
 
 export interface IAuthenState {
-  isLogin: IImmutableMap<IAuthenLogin>;
-  product: Immutable.List<IImmutableMap<any>>;
-  user: Immutable.List<IImmutableMap<any>>;
-  registry: IImmutableMap<any>;
+  credential: IImmutableMap<any>;
+  userInfo: IImmutableMap<any>;
 }
 
 export interface ItemBalance {

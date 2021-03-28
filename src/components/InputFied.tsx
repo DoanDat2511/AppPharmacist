@@ -25,7 +25,6 @@ const InputFied: React.FC<IInputFied> = (props) => {
       {/* <View style={styles.viewInput}> */}
         <TextInput
           style={styles.inputText}
-          autoCompleteType="email"
           onChangeText={onChangeText}
           {...other}
         />

@@ -1,4 +1,5 @@
 import { IImmutableStore } from "./redux-state";
+import { store } from "./store";
 
 //App
 export const sGetAppStatus = (store: IImmutableStore) =>
@@ -7,15 +8,8 @@ export const sGetIndicatorState = (store: IImmutableStore) =>
   store.appState.get("loading");
 export const sGetLanguage = (store: IImmutableStore) =>
   store.appState.get("language");
-export const sGetIsLogin = (store: IImmutableStore) =>
-  store.authenState.get("isLogin");
-
-export const sGetListProduct = (store: IImmutableStore) =>
-  store.authenState.get("product");
-
-export const sGetListUser = (store: IImmutableStore) =>
-  store.authenState.get("user");
-
-export const sGetRegistry = (store: IImmutableStore) =>
-  store.authenState.get("registry");
-
+// authen
+export const sGetCredential = (store: IImmutableStore) =>
+  store.authenState.get("credential");
+export const SGetUserInfor = (store: IImmutableStore) =>
+  store.authenState.get("userInfo");

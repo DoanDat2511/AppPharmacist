@@ -49,21 +49,44 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
   },
-  countMessenger:{
-    width:15,
-    height:15,
-    borderRadius:3,
-    backgroundColor:Colors.red,
-    justifyContent:"center",
-    alignItems:"center",
-    alignSelf:"flex-end",
-    position:"absolute",
-    top:10
+  countMessenger: {
+    width: 15,
+    height: 15,
+    borderRadius: 3,
+    backgroundColor: Colors.red,
+    justifyContent: "center",
+    alignItems: "center",
+    alignSelf: "flex-end",
+    position: "absolute",
+    top: 10,
   },
-  textNumberMess:{
-    fontSize:12,
-    color:Colors.white
-  }
+  textNumberMess: {
+    fontSize: 12,
+    color: Colors.white,
+  },
+  textTitle: {
+    // marginHorizontal: 10,
+    fontSize: 15,
+    color: Colors.GRAY_LIGHT,
+    fontWeight: "bold",
+    paddingTop: 10,
+  },
+  viewFriend: {
+    width: 60,
+    height: 60,
+    borderRadius: 35,
+    borderColor: Colors.GREEN,
+    borderWidth: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: Colors.white,
+    marginRight: 10,
+  },
+  imgFriend: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+  },
 });
 
 export default styles;
