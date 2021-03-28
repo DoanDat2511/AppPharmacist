@@ -7,7 +7,7 @@ import {
   updateAppLoadingAction,
   setLanguageAction,
 } from "../action/app-action";
-import { ELanguage } from "../../common/interface";
+import { ELanguage } from "../../utils/interface";
 // function return fromJS tra ve IImmutableAppState
 export function createInitAppState(): IImmutableAppState {
   return fromJS({
