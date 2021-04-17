@@ -1,4 +1,6 @@
-# AppPharmacistA Picker component for React Native which emulates the native <select> interfaces for iOS and Android
+# AppPharmacistA Picker component for React Native which emulates the native 
+
+<select> interfaces for iOS and Android
 
 For iOS, by default we are wrapping an unstyled TextInput component. You can then pass down styles to customize it to your needs.
 
